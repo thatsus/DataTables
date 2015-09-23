@@ -1,9 +1,9 @@
 {
-    "name": "thatsus/DataTables",
+    "name": "thatsus/datatables",
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/thatsus/DataTables.git"
+            "url": "https://github.com/thatsus/datatables.git"
         }
     ]
 }
