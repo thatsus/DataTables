@@ -1511,7 +1511,7 @@ var yadcf = (function ($) {
 			filterActionStr = '';
 		}
 
-		$(filter_selector_string).append("<input placeholder=\"" + filter_default_label + "\" id=\"" + dateId + "\" class=\"yadcf-filter-date\" " + filterActionStr + "></input>");
+		$(filter_selector_string).append("<input placeholder=\"" + filter_default_label + "\" id=\"" + dateId + "\" class=\"yadcf-filter-date form-control\" " + filterActionStr + "></input>");
 
 		if (filter_reset_button_text !== false) {
 			$(filter_selector_string_tmp).append('<button type="button" id="' + dateId + '-reset" ' + 'onmousedown="yadcf.stopPropagation(event);" ' +
