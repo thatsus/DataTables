@@ -1419,7 +1419,7 @@ var yadcf = (function ($) {
 
 		if (filter_reset_button_text !== false) {
 			$(filter_selector_string_tmp).append("<button type=\"button\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-				"onclick=\"yadcf.stopPropagation(event);yadcf.rangeClear('" + table_selector_jq_friendly + "',event); return false;\" class=\"yadcf-filter-reset-button\">" + filter_reset_button_text + "</button>");
+				"onclick=\"yadcf.stopPropagation(event);yadcf.rangeClear('" + table_selector_jq_friendly + "',event); return false;\" class=\"btn btn-default clear-btn\">" + filter_reset_button_text + "</button>");
 		}
 
         if (columnObj.datepicker_type === 'jquery-ui') {
@@ -1515,7 +1515,7 @@ var yadcf = (function ($) {
 
 		if (filter_reset_button_text !== false) {
 			$(filter_selector_string_tmp).append('<button type="button" id="' + dateId + '-reset" ' + 'onmousedown="yadcf.stopPropagation(event);" ' +
-				'onclick="yadcf.stopPropagation(event);yadcf.dateSelectSingle(\'' + table_selector_jq_friendly + '\',yadcf.eventTargetFixUp(event).target, \'clear\'); return false;" class="yadcf-filter-reset-button">' + filter_reset_button_text + '</button>');
+				'onclick="yadcf.stopPropagation(event);yadcf.dateSelectSingle(\'' + table_selector_jq_friendly + '\',yadcf.eventTargetFixUp(event).target, \'clear\'); return false;" class="btn btn-default clear-btn">' + filter_reset_button_text + '</button>');
 		}
 
 	    if (columnObj.datepicker_type === 'jquery-ui') {
@@ -1735,7 +1735,7 @@ var yadcf = (function ($) {
 
 			if (filter_reset_button_text !== false) {
 				$(filter_selector_string_tmp).append("<button type=\"button\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-					"onclick=\"yadcf.stopPropagation(event);yadcf.rangeNumberSliderClear('" + table_selector_jq_friendly + "',event); return false;\" class=\"yadcf-filter-reset-button range-number-slider-reset-button\">" + filter_reset_button_text + "</button>");
+					"onclick=\"yadcf.stopPropagation(event);yadcf.rangeNumberSliderClear('" + table_selector_jq_friendly + "',event); return false;\" class=\"btn btn-default clear-btn range-number-slider-reset-button\">" + filter_reset_button_text + "</button>");
 			}
 		}
 
@@ -2262,7 +2262,7 @@ var yadcf = (function ($) {
 								filterActionStr + " onmousedown=\"yadcf.stopPropagation(event);\" onclick='yadcf.stopPropagation(event);'>" + column_data + "</select>");
 							if (filter_reset_button_text !== false) {
 								$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" " +
-									"id=\"yadcf-filter-" + table_selector_jq_friendly + "-" + column_number + "-reset\" onmousedown=\"yadcf.stopPropagation(event);\" onclick=\"yadcf.stopPropagation(event);yadcf.doFilter('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"yadcf-filter-reset-button\">" + filter_reset_button_text + "</button>");
+									"id=\"yadcf-filter-" + table_selector_jq_friendly + "-" + column_number + "-reset\" onmousedown=\"yadcf.stopPropagation(event);\" onclick=\"yadcf.stopPropagation(event);yadcf.doFilter('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"btn btn-default clear-btn\">" + filter_reset_button_text + "</button>");
 							}
 						} else {
 							filterActionStr = 'onchange="yadcf.doFilterCustomDateFunc(this, \'' + table_selector_jq_friendly  + '\', ' +  column_number + ');"';
@@ -2273,7 +2273,7 @@ var yadcf = (function ($) {
 								filterActionStr	+ " onmousedown=\"yadcf.stopPropagation(event);\" onclick='yadcf.stopPropagation(event);'>" + column_data + "</select>");
 							if (filter_reset_button_text !== false) {
 								$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-									"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterCustomDateFunc('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"yadcf-filter-reset-button\">" + filter_reset_button_text + "</button>");
+									"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterCustomDateFunc('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"btn btn-default clear-btn\">" + filter_reset_button_text + "</button>");
 							}
 
 							if (settingsDt.oFeatures.bStateSave === true && settingsDt.oLoadedState) {
@@ -2317,7 +2317,7 @@ var yadcf = (function ($) {
 
 							if (filter_reset_button_text !== false) {
 								$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-									"onclick=\"yadcf.stopPropagation(event);yadcf.doFilter('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"yadcf-filter-reset-button\">" + filter_reset_button_text + "</button>");
+									"onclick=\"yadcf.stopPropagation(event);yadcf.doFilter('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"btn btn-default clear-btn\">" + filter_reset_button_text + "</button>");
 							}
 
 							if (settingsDt.aoPreSearchCols[column_position].sSearch !== '') {
@@ -2337,7 +2337,7 @@ var yadcf = (function ($) {
 
 							if (filter_reset_button_text !== false) {
 								$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-									"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterCustomDateFunc('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"yadcf-filter-reset-button\">" + filter_reset_button_text + "</button>");
+									"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterCustomDateFunc('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"btn btn-default clear-btn\">" + filter_reset_button_text + "</button>");
 							}
 
 							if (settingsDt.oFeatures.bStateSave === true && settingsDt.oLoadedState) {
@@ -2382,7 +2382,7 @@ var yadcf = (function ($) {
 
 						if (filter_reset_button_text !== false) {
 							$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-								"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"yadcf-filter-reset-button\">" + filter_reset_button_text + "</button>");
+								"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterAutocomplete('clear', '" + table_selector_jq_friendly + "', " + column_number + "); return false;\" class=\"btn btn-default clear-btn\">" + filter_reset_button_text + "</button>");
 						}
 
 					} else if (columnObj.filter_type === "text") {
@@ -2407,7 +2407,7 @@ var yadcf = (function ($) {
 
 						if (filter_reset_button_text !== false) {
 							$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" " + " id=\"yadcf-filter-" + table_selector_jq_friendly + "-" + column_number + "-reset\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-								"onclick=\"yadcf.stopPropagation(event);yadcf.textKeyUP('" + table_selector_jq_friendly + "', '" + column_number + "', 'clear'); return false;\" class=\"yadcf-filter-reset-button\">" + filter_reset_button_text + "</button>");
+								"onclick=\"yadcf.stopPropagation(event);yadcf.textKeyUP('" + table_selector_jq_friendly + "', '" + column_number + "', 'clear'); return false;\" class=\"btn btn-default clear-btn\">" + filter_reset_button_text + "</button>");
 						}
 
 						if (settingsDt.aoPreSearchCols[column_position].sSearch !== '') {
@@ -3290,7 +3290,7 @@ var yadcf = (function ($) {
 				+ "' placeholder='" + filterOptions.filter_default_label + "'" + " onkeyup=\"yadcf.textKeyUpMultiTables('" + tablesSelectors + "',event,'" + column_number_str + "');\"></input>");
 			if (filterOptions.filter_reset_button_text !== false) {
 				$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" " + " id=\"yadcf-filter-" + table_selector_jq_friendly + '-' + column_number_str + "-reset\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-					"onclick=\"yadcf.stopPropagation(event);yadcf.textKeyUpMultiTables('" + tablesSelectors + "', event,'" + column_number_str + "','clear'); return false;\" class=\"yadcf-filter-reset-button\">" + filterOptions.filter_reset_button_text + "</button>");
+					"onclick=\"yadcf.stopPropagation(event);yadcf.textKeyUpMultiTables('" + tablesSelectors + "', event,'" + column_number_str + "','clear'); return false;\" class=\"btn btn-default clear-btn\">" + filterOptions.filter_reset_button_text + "</button>");
 			}
 			if (tablesArray[0].table !== undefined) {
 				tableTmp = $('#' + tablesArray[0].table().node().id).dataTable();
@@ -3395,12 +3395,12 @@ var yadcf = (function ($) {
 			if (filterOptions.filter_type === 'select') {
 				if (filterOptions.filter_reset_button_text !== false) {
 					$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" " + " id=\"yadcf-filter-" + table_selector_jq_friendly  + '-' + column_number_str + "-reset\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-						"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterMultiTables('" + tablesSelectors + "', event,'" + column_number_str + "','clear'); return false;\" class=\"yadcf-filter-reset-button\">" + filterOptions.filter_reset_button_text + "</button>");
+						"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterMultiTables('" + tablesSelectors + "', event,'" + column_number_str + "','clear'); return false;\" class=\"btn btn-default clear-btn\">" + filterOptions.filter_reset_button_text + "</button>");
 				}
 			} else if (filterOptions.filter_type === 'multi_select') {
 				if (filterOptions.filter_reset_button_text !== false) {
 					$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" " + " id=\"yadcf-filter-" + table_selector_jq_friendly + '-' + column_number_str + "-reset\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-						"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterMultiTablesMultiSelect('" + tablesSelectors + "', event,'" + column_number_str + "','clear'); return false;\" class=\"yadcf-filter-reset-button\">" + filterOptions.filter_reset_button_text + "</button>");
+						"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterMultiTablesMultiSelect('" + tablesSelectors + "', event,'" + column_number_str + "','clear'); return false;\" class=\"btn btn-default clear-btn\">" + filterOptions.filter_reset_button_text + "</button>");
 				}
 			}
 
