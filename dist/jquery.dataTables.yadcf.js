@@ -1212,7 +1212,7 @@ var yadcf = (function ($) {
 
 		if (filter_reset_button_text !== false) {
 			$(filter_selector_string_tmp).append("<button type=\"button\" onmousedown=\"yadcf.stopPropagation(event);\" " +
-				"onclick=\"yadcf.stopPropagation(event);yadcf.rangeClear('" + table_selector_jq_friendly + "',event); return false;\" class=\"yadcf-filter-reset-button\">" + filter_reset_button_text + "</button>");
+				"onclick=\"yadcf.stopPropagation(event);yadcf.rangeClear('" + table_selector_jq_friendly + "',event); return false;\" class=\"btn btn-default clear-btn\">" + filter_reset_button_text + "</button>");
 		}
 
 		if (oTable.fnSettings().oFeatures.bStateSave === true && oTable.fnSettings().oLoadedState) {
